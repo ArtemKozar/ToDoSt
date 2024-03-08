@@ -1,19 +1,19 @@
-import { PropTypes } from 'prop-types'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
 import ListItem from './ListItem/ListItem'
-const TasksList = ({ allTasks }) => {
-  console.log(allTasks)
+const TasksList = () => {
+  const tasks = useSelector((state) => state.toDos)
   return (
     <>
-      <div>Tasks list</div>
-      {allTasks?.map((task) => {
-        return <ListItem task={task}/>
-      })}
+      <h2>Tasks list</h2>
+      {tasks.length === 0 ? (
+        <p>No tasks</p>
+      ) : (
+        tasks.map((task) => {
+          return <ListItem task={task} key={task.id} />
+        })
+      )}
     </>
   )
-}
-
-TasksList.propTypes = {
-  allTasks: PropTypes.array.isRequired,
 }
 
 export default TasksList

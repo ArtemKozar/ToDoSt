@@ -1,37 +1,36 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
+import { useDispatch } from 'react-redux'
+import { v4 as uuidv4 } from 'uuid'
+import { addToDo } from '../../redux/todos/actionCreators'
 
-const NewTask = ({ setAllTasks }) => {
-  const [toDo, setToDo] = useState({ task: '', isDone: false })
+const NewTask = () => {
+  const [toDo, setToDo] = useState('')
+  const dispatch = useDispatch()
 
   const handleInput = (event) => {
-    setToDo({ ...toDo, task: event.target.value })
+    setToDo(event.target.value)
   }
 
   const handleAddTask = () => {
-    setAllTasks((prevAllTasks) => [...prevAllTasks, toDo])
-    setToDo({ ...toDo, task: '' })
+    const task = {
+      toDo,
+      isDone: false,
+      id: uuidv4(),
+    }
+    dispatch(addToDo(task))
+    setToDo('')
   }
 
   return (
     <>
       <label>
         Add task:
-        <input
-          type="text"
-          value={toDo.task}
-          name="addTask"
-          onChange={handleInput}
-        />
+        <input type="text" value={toDo} name="addTask" onChange={handleInput} />
       </label>
       <br />
       <button onClick={handleAddTask}>Add</button>
     </>
   )
-}
-
-NewTask.propTypes = {
-  setAllTasks: PropTypes.func.isRequired,
 }
 
 export default NewTask

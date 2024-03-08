@@ -4,14 +4,13 @@ import NewTask from './components/NewTask/NewTask'
 import TasksList from './components/TasksList/TasksList'
 
 function App() {
-  const [allTasks, setAllTasks] = useState([])
-  console.log(allTasks)
+
 
   return (
     <div className="App">
-      <NewTask setAllTasks={setAllTasks} />
+      <NewTask />
       <br />
-      <TasksList allTasks={allTasks} />
+      <TasksList />
     </div>
   )
 }
