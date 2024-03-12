@@ -5,13 +5,14 @@ import { addToDo } from '../../redux/todos/actionCreators'
 
 const NewTask = () => {
   const [toDo, setToDo] = useState('')
-  const [checkToDoLength, setCheckToDoLength] = useState(true)
+  const [checkToDoLength, setCheckToDoLength] = useState(false)
   const dispatch = useDispatch()
 
   const handleInput = (event) => {
-    if (event.target.value.length > 5) {
-      setCheckToDoLength(false)
-    }
+    event.target.value.length >= 20 || event.target.value.length < 3
+      ? setCheckToDoLength(false)
+      : setCheckToDoLength(true)
+
     setToDo(event.target.value)
   }
 

@@ -9,7 +9,6 @@ const TasksList = () => {
 
   const allDoneToDos = tasks.filter((task) => task.isDone === true)
   const allNotDoneToDos = tasks.filter((task) => task.isDone === false)
-  console.log(filteredTasks)
 
   const handleUncomplitedTask = () => {
     setFilteredTasks(allNotDoneToDos)
