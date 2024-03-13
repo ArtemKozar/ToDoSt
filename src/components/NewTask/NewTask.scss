@@ -37,10 +37,12 @@ input:focus {
   background-color: $yellow_color;
   font-family: $main_font;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .addButton:disabled {
   transition: 0.3s;
   width: 300px;
   background-color: $blue_color;
+  cursor: default;
 }

@@ -49,6 +49,7 @@ h2 {
     font-family: $main_font;
     font-weight: bold;
     color: $white_color;
+    cursor: pointer;
   }
   .activeBtn {
     transition: 0.3s;
