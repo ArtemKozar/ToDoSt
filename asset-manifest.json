@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/ToDoSt/static/css/main.81cd8a31.css",
-    "main.js": "/ToDoSt/static/js/main.218d8f6d.js",
+    "main.css": "/ToDoSt/static/css/main.96ce9800.css",
+    "main.js": "/ToDoSt/static/js/main.75a09fca.js",
     "index.html": "/ToDoSt/index.html",
-    "static/media/check.svg": "/ToDoSt/static/media/check.3b1164b0cddd5fb84042e737f85fd575.svg",
-    "main.81cd8a31.css.map": "/ToDoSt/static/css/main.81cd8a31.css.map",
-    "main.218d8f6d.js.map": "/ToDoSt/static/js/main.218d8f6d.js.map"
+    "static/media/check_box.svg": "/ToDoSt/static/media/check_box.22aa7230ac51ddb360e34615c3779f66.svg",
+    "static/media/check_box_outline.svg": "/ToDoSt/static/media/check_box_outline.dd1e4204e92d6697d5097491001f7682.svg",
+    "main.96ce9800.css.map": "/ToDoSt/static/css/main.96ce9800.css.map",
+    "main.75a09fca.js.map": "/ToDoSt/static/js/main.75a09fca.js.map"
   },
   "entrypoints": [
-    "static/css/main.81cd8a31.css",
-    "static/js/main.218d8f6d.js"
+    "static/css/main.96ce9800.css",
+    "static/js/main.75a09fca.js"
   ]
 }
