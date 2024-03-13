@@ -1,16 +1,15 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import NewTask from './components/NewTask/NewTask'
 import TasksList from './components/TasksList/TasksList'
 
 function App() {
-
-
   return (
     <div className="App">
-      <NewTask />
-      <br />
-      <TasksList />
+      <div className="container">
+        <NewTask />
+        <TasksList />
+      </div>
     </div>
   )
 }

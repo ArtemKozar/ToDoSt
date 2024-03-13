@@ -1,0 +1,45 @@
+@import '../../styles/main.scss';
+
+.toDoName {
+  color: $blue_color;
+  .letter {
+    color: $yellow_color;
+  }
+}
+
+input {
+  height: 30px;
+  width: 300px;
+  font-family: $main_font;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid $blue_color;
+  transition: 0.3s;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+input:focus {
+  transition: 0.3s;
+  padding-left: 20px;
+  width: 320px;
+  border-bottom: 2px solid $yellow_color;
+}
+
+.addButton {
+  transition: 0.3s;
+  width: 340px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: $yellow_color;
+  font-family: $main_font;
+  font-weight: bold;
+}
+
+.addButton:disabled {
+  transition: 0.3s;
+  width: 300px;
+  background-color: $blue_color;
+}

@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
 import { addToDo } from '../../redux/todos/actionCreators'
 
+import './NewTask.scss'
+
 const NewTask = () => {
   const [toDo, setToDo] = useState('')
   const [checkToDoLength, setCheckToDoLength] = useState(false)
@@ -24,17 +26,28 @@ const NewTask = () => {
     }
     dispatch(addToDo(task))
     setToDo('')
+    setCheckToDoLength(false)
   }
 
   return (
     <>
-      <label>
-        Add task:
-        <input type="text" value={toDo} name="addTask" onChange={handleInput} />
-      </label>
+      <h1 className="toDoName">
+        TODO<span className='letter'>s</span>T
+      </h1>
+      <input
+        type="text"
+        placeholder="ToDo"
+        value={toDo}
+        onChange={handleInput}
+      />
+
       <br />
-      <button onClick={handleAddTask} disabled={!checkToDoLength}>
-        Add
+      <button
+        onClick={handleAddTask}
+        disabled={!checkToDoLength}
+        className="addButton"
+      >
+        ADD
       </button>
     </>
   )

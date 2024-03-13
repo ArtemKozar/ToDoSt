@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+@mixin Centered_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
