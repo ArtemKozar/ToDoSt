@@ -3,18 +3,19 @@
 .toDoContainer {
   .taskBlock {
     width: 320px;
-    height: 20px;
     display: flex;
     padding: 10px;
     margin-bottom: 10px;
-    border: none;
-    border-bottom: 2px solid $blue_color;
     cursor: pointer;
 
     .todo {
+      width: 285px;
       color: $blue_color;
       font-weight: 500;
-      padding-left: 20px;
+      padding-top: 10px;
+      border: none;
+      border-bottom: 2px solid $blue_color;
+      margin-left: 10px;
     }
 
     .completedToDo {
@@ -23,13 +24,12 @@
   }
 
   .toDoStatus {
-    height: 42px;
-    width: 32px;
+    height: 35px;
+    width: 35px;
     background-color: $yellow_color;
     @include Centered_content;
   }
-}
-
-.taskBlock:hover {
-  border-bottom: 2px solid $yellow_color;
+  .todo:hover {
+    border-bottom: 2px solid $yellow_color;
+  }
 }
