@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ToDoSt/static/css/main.96ce9800.css",
+    "main.css": "/ToDoSt/static/css/main.cc997376.css",
     "main.js": "/ToDoSt/static/js/main.75a09fca.js",
     "index.html": "/ToDoSt/index.html",
     "static/media/check_box.svg": "/ToDoSt/static/media/check_box.22aa7230ac51ddb360e34615c3779f66.svg",
     "static/media/check_box_outline.svg": "/ToDoSt/static/media/check_box_outline.dd1e4204e92d6697d5097491001f7682.svg",
-    "main.96ce9800.css.map": "/ToDoSt/static/css/main.96ce9800.css.map",
+    "main.cc997376.css.map": "/ToDoSt/static/css/main.cc997376.css.map",
     "main.75a09fca.js.map": "/ToDoSt/static/js/main.75a09fca.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ce9800.css",
+    "static/css/main.cc997376.css",
     "static/js/main.75a09fca.js"
   ]
 }
