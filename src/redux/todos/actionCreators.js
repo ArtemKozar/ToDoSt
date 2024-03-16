@@ -13,3 +13,10 @@ export const toggleIsDone = (id) => {
     payload: id,
   }
 }
+
+export const deleteToDo = (id) => {
+  return {
+    type: a.DELETE_TODO,
+    payload: id,
+  }
+}

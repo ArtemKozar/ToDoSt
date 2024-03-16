@@ -2,24 +2,29 @@
 
 .toDoContainer {
   .taskBlock {
-    width: 320px;
+    width: 365px;
     display: flex;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
 
     .todo {
-      width: 285px;
+      min-width: 285px;
       color: $blue_color;
       font-weight: 500;
       padding-top: 10px;
       border: none;
       border-bottom: 2px solid $blue_color;
-      margin-left: 10px;
+      margin: 0 10px 0 10px;
     }
 
     .completedToDo {
       text-decoration: line-through;
+    }
+
+    .deleteToDo {
+      display: flex;
+      cursor: pointer;
     }
   }
 
