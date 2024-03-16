@@ -32,7 +32,7 @@ const NewTask = () => {
   return (
     <>
       <h1 className="toDoName">
-        TODO<span className='letter'>s</span>T
+        TODO<span className="letter">s</span>T
       </h1>
       <input
         type="text"

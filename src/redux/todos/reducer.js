@@ -10,6 +10,8 @@ const toDosReducer = (state = initialState, action) => {
       return state.map((todo) =>
         todo.id === action.payload ? { ...todo, isDone: !todo.isDone } : todo
       )
+    case a.DELETE_TODO:
+      return state.filter((todo) => todo.id !== action.payload)
     default:
       return state
   }
