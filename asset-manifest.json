@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ToDoSt/static/css/main.cc997376.css",
-    "main.js": "/ToDoSt/static/js/main.75a09fca.js",
+    "main.css": "/ToDoSt/static/css/main.cbad7666.css",
+    "main.js": "/ToDoSt/static/js/main.a5d795c2.js",
     "index.html": "/ToDoSt/index.html",
     "static/media/check_box.svg": "/ToDoSt/static/media/check_box.22aa7230ac51ddb360e34615c3779f66.svg",
+    "static/media/delete.svg": "/ToDoSt/static/media/delete.84a44d9e05b329288cb5fc1647dd7ce7.svg",
     "static/media/check_box_outline.svg": "/ToDoSt/static/media/check_box_outline.dd1e4204e92d6697d5097491001f7682.svg",
-    "main.cc997376.css.map": "/ToDoSt/static/css/main.cc997376.css.map",
-    "main.75a09fca.js.map": "/ToDoSt/static/js/main.75a09fca.js.map"
+    "main.cbad7666.css.map": "/ToDoSt/static/css/main.cbad7666.css.map",
+    "main.a5d795c2.js.map": "/ToDoSt/static/js/main.a5d795c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc997376.css",
-    "static/js/main.75a09fca.js"
+    "static/css/main.cbad7666.css",
+    "static/js/main.a5d795c2.js"
   ]
 }
